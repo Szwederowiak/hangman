@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Sans-serif;
+}
+
+.mood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 0.5em;
+}
+
+.mood__state {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99em;
+  border: solid 2px;
+  opacity: 0.2;
+}
+
+.mood__state--current {
+  opacity: 1;
+}
+
+.category {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-gap: 5px;
+  place-items: center;
+}
+
+.keyboard__button {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.password {
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hangman" id="hangman">
+      <div class="mood" id="result"></div>
+
+      <h1 class="password" id="password"></h1>
+
+      <h2 class="category" id="category">Kategoria:</h2>
+
+      <div class="keyboard" id="keyboard"></div>
+    </div>
+
+    <script src="js/Game.js"></script>
+    <script>
+      const game = new Game({
+        resultWrapper: document.getElementById("result"),
+        passwordWrapper: document.getElementById("password"),
+        categoryWrapper: document.getElementById("category"),
+        keyboardWrapper: document.getElementById("keyboard"),
+      });
+      game.run();
+    </script>
+  </body>
+</html>
